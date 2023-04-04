@@ -116,10 +116,16 @@
 
     combos {
         compatible = "zmk,combos";
+        layers = <0>;
         combo_esc {
             timeout-ms = <30>;
             key-positions = <L SEMICOLON>;
             bindings = <&kp BACKSPACE>;
+        };
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <O SEMICOLON>;
+            bindings = <&kp ENTER>;
         };
     };
 

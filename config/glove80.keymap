@@ -23,13 +23,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 
-enum custom_layer{
-    DEFAULT,
-    LOWER,
-    MAGIC,
-    LOWER2,
-};
-
 / {
     /* Glove80 system behavior & macros */
     behaviors {

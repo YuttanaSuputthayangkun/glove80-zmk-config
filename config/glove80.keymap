@@ -142,5 +142,18 @@
             >;
         };
 
+        /*
+        layer_Raise {
+            bindings = <
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+            >;
+        };
+        */
+
     };
 };

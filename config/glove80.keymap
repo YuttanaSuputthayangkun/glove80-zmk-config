@@ -172,7 +172,7 @@
             #binding-cells = <0>;
             bindings
                 = <&kt LSHFT>,
-                  <&kp TAB>
+                  <&kp TAB>,
                   <&kt LSHFT>;
         };
     };

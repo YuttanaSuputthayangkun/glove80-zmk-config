@@ -42,6 +42,13 @@
             tapping-term-ms = <200>;
             bindings = <&mo 4>, <&to 4>;
         };
+        genshin: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 4>, <&to 4>;
+        };
     };
 
     macros {
@@ -183,4 +190,16 @@
             >;
         };
 
+        layer_Genshin {
+            bindings = <
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+            >;
+        };
+
     };
+}

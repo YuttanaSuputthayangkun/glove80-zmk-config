@@ -128,7 +128,7 @@
         combo_esc {
             timeout-ms = <30>;
             key-positions = <S F>;
-            bindings = <&kp lsft_tab>;
+            bindings = <&lsft_tab>;
         };
 
 

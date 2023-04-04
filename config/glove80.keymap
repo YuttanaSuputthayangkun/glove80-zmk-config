@@ -192,14 +192,14 @@
 
         layer_Genshin {
             bindings = <
-      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &kp M             &kp J             &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &kc SPACE     &lower         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
 
     };
-}
+};

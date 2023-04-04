@@ -26,7 +26,7 @@
 #define LAYER_MAIN 0
 #define LAYER_LOWER_OLD 1
 #define LAYER_MAGIC 2
-#define LAYER_LOWER_NEW 3
+#define LAYER_LOWER 3
 #define LAYER_RAISE 4
 #define LAYER_ADJUST 5
 #define LAYER_GENSHIN 6

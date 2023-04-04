@@ -192,12 +192,12 @@
 
         layer_Genshin {
             bindings = <
-      &trans            &kp M             &kp J             &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &kc SPACE     &lower         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &kp J         &kp M          &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &kp SPACE     &lower         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
 

@@ -168,7 +168,7 @@
     /* Custom Macros */
     macros {
         lsft_tab: left_shift_tab {
-            label = "LEFT_SHIFT_TAB",
+            label = "LEFT_SHIFT_TAB";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings

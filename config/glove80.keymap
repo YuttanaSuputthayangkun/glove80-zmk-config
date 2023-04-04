@@ -28,27 +28,6 @@
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
-        lower: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 3>, <&to 3>;
-        };
-        raise: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 4>, <&to 4>;
-        };
-        genshin: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 6>, <&to 6>;
-        };
     };
 
     macros {
@@ -140,7 +119,7 @@
         combo_esc {
             timeout-ms = <30>;
             key-positions = <S F>;
-            bindings = <&kp tab>;
+            bindings = <&kp TAB>;
         };
         combo_esc {
             timeout-ms = <30>;

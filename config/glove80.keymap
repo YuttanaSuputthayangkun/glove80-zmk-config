@@ -23,7 +23,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define LAYER_MAIN 0
+#define LAYER_DEFAULT 0
 #define LAYER_LOWER_OLD 1
 #define LAYER_MAGIC 2
 #define LAYER_LOWER 3

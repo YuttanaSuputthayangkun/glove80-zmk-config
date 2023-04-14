@@ -171,7 +171,7 @@
             label = "LEFT_SHIFT_TAB";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LSHFT &kp TAB &kt LSHFT>;
+            bindings = <&macro_press &kt LSHFT &kp TAB &kt LSHFT>;
         };
     };
 

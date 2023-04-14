@@ -78,6 +78,99 @@
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
         };
+    };
+
+    magic: magic_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MAGIC_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        bindings = <&mo>, <&rgb_ug_status_macro>;
+    }; 
+
+    /* Main Layer Combos */
+    combos {
+        compatible = "zmk,combos";
+        layers = <0>;
+
+        /* left hand */
+        combo_w_a {
+            timeout-ms = <30>;
+            key-positions = <24 35>;
+            bindings = <&kp ESC>;
+        };
+        combo_s_f {
+            timeout-ms = <30>;
+            key-positions = <36 38>;
+            bindings = <&kp TAB>;
+        };
+        combo_s_r {
+            timeout-ms = <30>;
+            key-positions = <36 26>;
+            bindings = <&lsft_tab>;
+        };
+        combo_d_f {
+            timeout-ms = <30>;
+            key-positions = <37 38>;
+            bindings = <&kp LCTL>;
+        };
+        combo_x_c {
+            timeout-ms = <30>;
+            key-positions = <48 49>;
+            bindings = <&kp BACKSPACE>;
+        };
+        combo_c_v {
+            timeout-ms = <30>;
+            key-positions = <49 50>;
+            bindings = <&kp ENTER>;
+        };
+
+
+        /* right hand */
+        combo_h_j {
+            timeout-ms = <30>;
+            key-positions = <40 41>;
+            bindings = <&kp LSHFT>;
+        };
+        combo_j_k {
+            timeout-ms = <30>;
+            key-positions = <41 42>;
+            bindings = <&kp RCTRL>;
+        };
+        combo_j_l {
+            timeout-ms = <30>;
+            key-positions = <41 43>;
+            bindings = <&kp RALT>;
+        };
+        combo_k_l {
+            timeout-ms = <30>;
+            key-positions = <42 43>;
+            bindings = <&kp RGUI>;
+        };
+        combo_l_semicolon {
+            timeout-ms = <30>;
+            key-positions = <43 44>;
+            bindings = <&kp BACKSPACE>;
+        };
+        combo_o_semicolon {
+            timeout-ms = <30>;
+            key-positions = <31 44>;
+            bindings = <&kp ENTER>;
+        };
+    };
+
+    /* Custom Macros */
+    macros {
+        lsft_tab: left_shift_tab {
+            label = "LEFT_SHIFT_TAB";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kt LSHFT>,
+                  <&kp TAB>,
+                  <&kt LSHFT>;
+        };
         lower: lower {
             label = "LOWER";
             compatible = "zmk,behavior-macro";
@@ -101,99 +194,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mo LAYER_GENSHIN>;
-        };
-    };
-
-    magic: magic_hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MAGIC_HOLD_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        bindings = <&mo>, <&rgb_ug_status_macro>;
-    }; 
-
-    /* Main Layer Combos */
-    combos {
-        compatible = "zmk,combos";
-        // layers = <0>;
-
-        /* left hand */
-        combo_w_a {
-            timeout-ms = <30>;
-            key-positions = <W A>;
-            bindings = <&kp ESC>;
-        };
-        combo_s_f {
-            timeout-ms = <30>;
-            key-positions = <S F>;
-            bindings = <&kp TAB>;
-        };
-        combo_s_r {
-            timeout-ms = <30>;
-            key-positions = <S R>;
-            bindings = <&lsft_tab>;
-        };
-        combo_d_f {
-            timeout-ms = <30>;
-            key-positions = <D F>;
-            bindings = <&kp LCTL>;
-        };
-        combo_x_c {
-            timeout-ms = <30>;
-            key-positions = <X C>;
-            bindings = <&kp BACKSPACE>;
-        };
-        combo_c_v {
-            timeout-ms = <30>;
-            key-positions = <C V>;
-            bindings = <&kp ENTER>;
-        };
-
-
-        /* right hand */
-        combo_h_j {
-            timeout-ms = <30>;
-            key-positions = <H J>;
-            bindings = <&kp LSHFT>;
-        };
-        combo_j_k {
-            timeout-ms = <30>;
-            key-positions = <J K>;
-            bindings = <&kp RCTRL>;
-        };
-        combo_j_l {
-            timeout-ms = <30>;
-            key-positions = <J L>;
-            bindings = <&kp RALT>;
-        };
-        combo_k_l {
-            timeout-ms = <30>;
-            key-positions = <K L>;
-            bindings = <&kp RGUI>;
-        };
-        combo_l_semicolon {
-            timeout-ms = <30>;
-            key-positions = <L SEMICOLON>;
-            bindings = <&kp BACKSPACE>;
-        };
-        combo_o_semicolon {
-            timeout-ms = <30>;
-            key-positions = <O SEMICOLON>;
-            bindings = <&kp ENTER>;
-        };
-    };
-
-    /* Custom Macros */
-    macros {
-        lsft_tab: left_shift_tab {
-            label = "LEFT_SHIFT_TAB";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kt LSHFT>,
-                  <&kp TAB>,
-                  <&kt LSHFT>;
         };
     };
 
@@ -267,7 +267,7 @@
       &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &kp GRAVE         &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp NUM_4         &kp NUM_5                                                                                           &kp NUM_6       &kp NUM_7        &kp NUM_8       &kp NUM_9        &kp NUM_0         &trans
-      &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6                                                                                              &trans          &kp LEFT         &kp DOWN        &kp UP           &kp RIGHT         &trans
+      &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6                                                                                              &kp LEFT        &kp DOWN         &kp UP          &kp RIGHT        &trans            &trans
       &kp F7            &kp F8            &kp F9            &kp F10           &kp F11           &kp F12       &trans        &trans         &trans        &trans         &trans        &trans        &kp PLUS        &kp MINUS        &kp EQUAL       &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSPACE
       &trans            &trans            &trans            &trans            &trans                          &adjust       &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;

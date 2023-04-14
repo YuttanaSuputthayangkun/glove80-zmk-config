@@ -36,7 +36,7 @@
 #define MO_ADJUST &mo LAYER_ADJUST
 #define MO_GENSHIN &mo LAYER_GENSHIN
 
-#define TP_GENSHIN &tog LAYER_GENSHIN
+#define TG_GENSHIN &tog LAYER_GENSHIN
 
 / {
     /* Glove80 system behavior & macros */

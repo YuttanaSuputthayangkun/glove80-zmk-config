@@ -207,12 +207,12 @@
 
         base_0_layer {
             bindings = <
-  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-  &kp ESC                          &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                  &kp N6  &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS
-  &kp TAB                          &kp Q    &kp W     &kp E      &kp R   &kp T                                                                   &kp Y   &kp U           &kp I           &kp O           &kp P           &kp BSLH
-  &kp LCTRL                        &kp A    &kp S     &kp D      &kp F   &kp G                                                                   &kp H   &kp J           &kp K           &kp L           &kp SEMI        &kp SINGLE_QUOTE
-  &kp LSHIFT                       &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower  &kp LGUI  &kp RCTRL  &kp RSHFT   &kp N   &kp M           &kp COMMA       &kp DOT         &kp SLASH       &kp PIPE
- &magic LAYER_MAGIC LAYER_DEFAULT  &kp HOME  &kp END  &kp LEFT  &kp RIGHT       &lower     &kp SPACE    &kp LALT &kp RALT &kp RET    &raise              &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp PG_DN
+  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                            &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
+  &kp ESC                          &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                            &kp N6  &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS
+  &kp TAB                          &kp Q    &kp W     &kp E      &kp R   &kp T                                                                             &kp Y   &kp U           &kp I           &kp O           &kp P           &kp BSLH
+  &kp LCTRL                        &kp A    &kp S     &kp D      &kp F   &kp G                                                                             &kp H   &kp J           &kp K           &kp L           &kp SEMI        &kp SINGLE_QUOTE
+  &kp LSHIFT                       &kp Z    &kp X     &kp C      &kp V   &kp B  &mo LAYER_LOWER  &kp LCTRL    &lower   &kp LGUI &kp RCTRL  &mo LAYER_RAISE &kp N   &kp M           &kp COMMA       &kp DOT         &kp SLASH       &kp PIPE
+ &magic LAYER_MAGIC LAYER_DEFAULT  &kp HOME  &kp END  &kp LEFT  &kp RIGHT       &lower           &kp SPACE    &kp LALT &kp RALT &kp RET    &raise                  &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp PG_DN
             >;
         };
 

@@ -119,32 +119,32 @@
         layers = <0>;
 
         /* left hand */
-        combo_esc {
+        combo_w_a {
             timeout-ms = <30>;
             key-positions = <W A>;
             bindings = <&kp ESC>;
         };
-        combo_esc {
+        combo_s_f {
             timeout-ms = <30>;
             key-positions = <S F>;
             bindings = <&kp TAB>;
         };
-        combo_esc {
+        combo_s_r {
             timeout-ms = <30>;
             key-positions = <S R>;
             bindings = <&lsft_tab>;
         };
-        combo_esc {
+        combo_d_f {
             timeout-ms = <30>;
             key-positions = <D F>;
             bindings = <&kp LCTL>;
         };
-        combo_esc {
+        combo_x_c {
             timeout-ms = <30>;
             key-positions = <X C>;
             bindings = <&kp BACKSPACE>;
         };
-        combo_esc {
+        combo_c_v {
             timeout-ms = <30>;
             key-positions = <C V>;
             bindings = <&kp ENTER>;
@@ -152,32 +152,32 @@
 
 
         /* right hand */
-        combo_esc {
+        combo_h_j {
             timeout-ms = <30>;
             key-positions = <H J>;
             bindings = <&kp LSHFT>;
         };
-        combo_esc {
+        combo_j_k {
             timeout-ms = <30>;
             key-positions = <J K>;
             bindings = <&kp RCTRL>;
         };
-        combo_esc {
+        combo_j_l {
             timeout-ms = <30>;
             key-positions = <J L>;
             bindings = <&kp RALT>;
         };
-        combo_esc {
+        combo_k_l {
             timeout-ms = <30>;
             key-positions = <K L>;
             bindings = <&kp RGUI>;
         };
-        combo_esc {
+        combo_l_semicolon {
             timeout-ms = <30>;
             key-positions = <L SEMICOLON>;
             bindings = <&kp BACKSPACE>;
         };
-        combo_esc {
+        combo_o_semicolon {
             timeout-ms = <30>;
             key-positions = <O SEMICOLON>;
             bindings = <&kp ENTER>;

@@ -36,6 +36,8 @@
 #define MO_ADJUST &mo LAYER_ADJUST
 #define MO_GENSHIN &mo LAYER_GENSHIN
 
+#define TP_GENSHIN &tog LAYER_GENSHIN
+
 / {
     /* Glove80 system behavior & macros */
     behaviors {
@@ -183,7 +185,7 @@
 
         base_0_layer {
             bindings = <
-  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                            &kp C_VOL_UP    &kp C_VOL_DN    &kp C_PP        &kp F9          &kp F10
+  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                            &kp C_VOL_UP    &kp C_VOL_DN    &kp C_PP        TG_GENSHIN      &kp F10
   &kp ESC                          &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                            &kp N6  &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS
   &kp TAB                          &kp Q    &kp W     &kp E      &kp R   &kp T                                                                             &kp Y   &kp U           &kp I           &kp O           &kp P           &kp BSLH
   &kp ESC                          &kp A    &kp S     &kp D      &kp F   &kp G                                                                             &kp H   &kp J           &kp K           &kp L           &kp SEMI        &kp SINGLE_QUOTE

@@ -116,7 +116,7 @@
     /* Main Layer Combos */
     combos {
         compatible = "zmk,combos";
-        layers = <0>;
+        // layers = <0>;
 
         /* left hand */
         combo_w_a {

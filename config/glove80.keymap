@@ -151,6 +151,12 @@
             key-positions = <49 50>;
             bindings = <&kp ENTER>;
         };
+        combo_lshft_bksp {
+            layers = <COMBO_LAYERS>;
+            timeout-ms = <30>;
+            key-positions = <52 69>;
+            bindings = <&kp LGUI>;
+        };
 
 
         /* right hand */

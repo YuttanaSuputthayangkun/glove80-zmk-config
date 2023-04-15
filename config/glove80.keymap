@@ -283,10 +283,10 @@
         layer_6_Genshin {
             bindings = <
       &kp ESC           &none             &none             &none             &kp N5                                                                                                                                &trans           &trans          &trans           &trans            &trans 
-      &trans            &trans            &kp N1            &kp N2            &kp N3            &kp N4                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &kp ESC           &kp N1            &kp N2            &kp N3            &kp N4                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &none             &none             &kp Q             &kp W             &kp E             &kp T                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
-      &kp LCTL          &none             &kp A             &kp S             &kp D             &kp F                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
-      &kp LSHFT         &none             &none             &none             &kp C             &kp B         &kp J         &kp M          &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &kp LCTL          &kp LCTL          &kp A             &kp S             &kp D             &kp F                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
+      &kp LSHFT         &kp LSHFT         &kp Z             &kp X             &kp C             &kp B         &kp J         &kp M          &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
       &none             &trans            &trans            &trans            &kp SPACE                       &kp SPACE     &kp ESC        &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };

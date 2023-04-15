@@ -271,12 +271,11 @@
 
         layer_6_Genshin {
             bindings = <
-      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans        &kp J         &kp M          &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &kp SPACE     MO_LOWER       &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &kp ESC           &none             &none             &none             &none                                                                                                                                 &trans           &trans          &trans           &trans            &trans &none            &none            &trans            &trans            &trans            &kp M                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
+      &none             &none             &kp Q             &kp W             &kp E             &kp T                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
+      &kp LCTL          &none             &kp A             &kp S             &kp D             &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &kp LSHFT         &none             &none             &none             &none             &kp B         &kp J         &kp M          &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &none             &trans            &trans            &trans            &kp SPACE                       &kp SPACE     &kp ESC        &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
 

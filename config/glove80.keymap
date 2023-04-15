@@ -14,7 +14,7 @@
  */
 
 #include <behaviors.dtsi>
-/* Include all behaviour includes needed by system behaviors/macros */
+/* include all behaviour includes needed by system behaviors/macros */
 #include <dt-bindings/zmk/outputs.h>
 
 /* Include behaviour includes needed by key binds - automatically generated */
@@ -105,16 +105,19 @@
 
         /* left hand */
         combo_w_a {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <24 35>;
             bindings = <&kp ESC>;
         };
         combo_s_d {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp LGUI>;
         };
         combo_s_f {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <36 38>;
             bindings = <&kp TAB>;
@@ -125,16 +128,19 @@
             bindings = <&lsft_tab>;
         };
         combo_d_f {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <37 38>;
             bindings = <&kp LCTL>;
         };
         combo_x_c {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <48 49>;
             bindings = <&kp BACKSPACE>;
         };
         combo_c_v {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <49 50>;
             bindings = <&kp ENTER>;
@@ -143,31 +149,37 @@
 
         /* right hand */
         combo_h_l {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <40 43>;
             bindings = <&kp LSHFT>;
         };
         combo_j_k {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <41 42>;
             bindings = <&kp RCTRL>;
         };
         combo_j_l {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <41 43>;
             bindings = <&kp RALT>;
         };
         combo_k_l {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RGUI>;
         };
         combo_l_semicolon {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <43 44>;
             bindings = <&kp BACKSPACE>;
         };
         combo_o_semicolon {
+            layers = <LAYER_DEFAULT>;
             timeout-ms = <50>;
             key-positions = <31 44>;
             bindings = <&kp ENTER>;

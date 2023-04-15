@@ -30,6 +30,8 @@
 #define LAYER_RAISE 4
 #define LAYER_ADJUST 5
 #define LAYER_GENSHIN 6
+#define LAYER_READING 7
+#define LAYER_GAME 8
 
 #define MO_LOWER &mo LAYER_LOWER
 #define MO_RAISE &mo LAYER_RAISE
@@ -37,6 +39,8 @@
 #define MO_GENSHIN &mo LAYER_GENSHIN
 
 #define TG_GENSHIN &tog LAYER_GENSHIN
+#define TG_READING &tog LAYER_READING
+#define TG_GAME &tog LAYER_GAME
 
 #define MAGIC_DEFAULT &magic LAYER_MAGIC LAYER_DEFAULT 
 
@@ -260,7 +264,7 @@
         
         layer_4_Raise {
             bindings = <
-      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                TG_GENSHIN       TG_READING      TG_GAME          &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &kp GRAVE         &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp NUM_4         &kp NUM_5                                                                                           &kp NUM_6       &kp NUM_7        &kp NUM_8       &kp NUM_9        &kp NUM_0         &trans
       &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6                                                                                              &kp LEFT        &kp DOWN         &kp UP          &kp RIGHT        &trans            &trans
@@ -291,5 +295,26 @@
             >;
         };
 
+        layer_reading {
+            bindings = <
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+            >;
+        };
+        
+        layer_game {
+            bindings = <
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+            >;
+        };
     };
 };

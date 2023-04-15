@@ -33,6 +33,8 @@
 #define LAYER_READING 7
 #define LAYER_GAME 8
 
+#define COMBO_LAYERS LAYER_DEFAULT LAYER_READING
+
 #define MO_LOWER &mo LAYER_LOWER
 #define MO_RAISE &mo LAYER_RAISE
 #define MO_ADJUST &mo LAYER_ADJUST
@@ -108,42 +110,43 @@
 
         /* left hand */
         combo_w_a {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <24 35>;
             bindings = <&kp ESC>;
         };
         combo_s_d {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <36 37>;
             bindings = <&kp LGUI>;
         };
         combo_s_f {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <36 38>;
             bindings = <&kp TAB>;
         };
         combo_s_r {
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <36 26>;
             bindings = <&lsft_tab>;
         };
         combo_d_f {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <37 38>;
             bindings = <&kp LCTL>;
         };
         combo_x_c {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <48 49>;
             bindings = <&kp BACKSPACE>;
         };
         combo_c_v {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <49 50>;
             bindings = <&kp ENTER>;
@@ -152,37 +155,37 @@
 
         /* right hand */
         combo_h_l {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <40 43>;
             bindings = <&kp LSHFT>;
         };
         combo_j_k {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <41 42>;
             bindings = <&kp RCTRL>;
         };
         combo_j_l {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <41 43>;
             bindings = <&kp RALT>;
         };
         combo_k_l {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RGUI>;
         };
         combo_l_semicolon {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <43 44>;
             bindings = <&kp BACKSPACE>;
         };
         combo_o_semicolon {
-            layers = <LAYER_DEFAULT>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <31 44>;
             bindings = <&kp ENTER>;
@@ -298,11 +301,11 @@
         layer_reading {
             bindings = <
       &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &kp HOME          &kp END           &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &kp UP            &trans            &kp PAGE_UP                                                                                         &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &kp LEFT          &kp DOWN          &kp RIGHT         &kp PAGE_DOWN                                                                                       &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &kp ESC                         &kp ENTER     &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
         
@@ -313,7 +316,7 @@
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &kp ENTER     &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
     };

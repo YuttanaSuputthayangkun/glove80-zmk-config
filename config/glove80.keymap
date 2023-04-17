@@ -107,7 +107,7 @@
     lgui_hold: lgui_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "LGUI_HOLD_TAP";
-        #binding-cells = <0>;
+        #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <0>;
         bindings = <&none>, <&kp LGUI>;
@@ -164,7 +164,7 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 69>;
-            bindings = <&lgui_hold>;
+            bindings = <&lgui_hold &none &none>;
         };
 
 

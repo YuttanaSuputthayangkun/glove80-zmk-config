@@ -104,6 +104,7 @@
         bindings = <&mo>, <&rgb_ug_status_macro>;
     }; 
 
+    // TODO: work on how to get this going
     lgui_hold: lgui_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         label = "LGUI_HOLD_TAP";
@@ -164,7 +165,7 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 69>;
-            bindings = <&lgui_hold &none LGUI>;
+            bindings = <&mt &none LGUI>;
         };
 
 

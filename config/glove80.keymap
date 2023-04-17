@@ -110,7 +110,7 @@
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <0>;
-        bindings = <&kp>, <&kp>;
+        bindings = <&none>, <&kp>;
     }; 
 
     /* Main Layer Combos */

@@ -104,6 +104,15 @@
         bindings = <&mo>, <&rgb_ug_status_macro>;
     }; 
 
+    lgui_hold: lgui_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LGUI_HOLD_TAP";
+        #binding-cells = <0>;
+        flavor = "balanced";
+        tapping-term-ms = <0>;
+        bindings = <&none>, <&kp LGUI>;
+    }; 
+
     /* Main Layer Combos */
     combos {
         compatible = "zmk,combos";
@@ -155,7 +164,7 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 69>;
-            bindings = <&kp LGUI>;
+            bindings = <&lgui_hold>;
         };
 
 

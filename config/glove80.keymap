@@ -110,7 +110,7 @@
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <0>;
-        bindings = <&none>, <&kp LGUI>;
+        bindings = <&kp>, <&kp>;
     }; 
 
     /* Main Layer Combos */
@@ -164,7 +164,7 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 69>;
-            bindings = <&lgui_hold &none &none>;
+            bindings = <&lgui_hold &none LGUI>;
         };
 
 

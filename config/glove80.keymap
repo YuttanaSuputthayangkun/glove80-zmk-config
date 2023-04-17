@@ -165,7 +165,7 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 69>;
-            bindings = <&mt &none LGUI>;
+            bindings = <&kp LGUI>;
         };
 
 

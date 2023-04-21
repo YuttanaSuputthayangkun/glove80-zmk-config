@@ -167,7 +167,12 @@
             key-positions = <52 69>;
             bindings = <&kp LGUI>;
         };
-
+        combo_lshft_space {
+            layers = <COMBO_LAYERS>;
+            timeout-ms = <30>;
+            key-positions = <52 70>;
+            bindings = <&lsft_lgui>;
+        };
 
         /* right hand */
         combo_h_l {
@@ -231,6 +236,14 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = <&kt LGUI &kp PSCRN &kt LGUI>;
+        };
+        lsft_lgui: left_shift_lgui {
+            label = "left_shift_lgui";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LSHFT &kp LGUI &kt LSHFT>;
         };
     };
 

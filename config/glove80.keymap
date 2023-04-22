@@ -245,6 +245,22 @@
             tap-ms = <0>;
             bindings = <&kt LSHFT &kp LGUI &kt LSHFT>;
         };
+        mac_scrn: mac_screenshot {
+            label = "mac_screenshot";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LSHFT &kt LGUI &kp N3 &kt LGUI &kt LSHFT>;
+        };
+        mac_scrn_p: mac_screenshot_portion {
+            label = "mac_screenshot_portion";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LSHFT &kt LGUI &kp N4 &kt LGUI &kt LSHFT>;
+        };
     };
 
     keymap {

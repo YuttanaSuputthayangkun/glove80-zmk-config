@@ -246,8 +246,9 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&macro_press &kp LSHFT &kp LGUI>
-                , <&macro_release &kp LGUI &kp LSHFT>;
+            // bindings = <&macro_press &kp LSHFT &kp LGUI>
+            //     , <&macro_release &kp LGUI &kp LSHFT>;
+            bindings = <&kp LSHFT &kp LGUI>;
         };
         mac_scrn: mac_screenshot {
             label = "mac_screenshot";

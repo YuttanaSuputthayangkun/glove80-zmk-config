@@ -284,6 +284,10 @@
         bindings = <&none>, <&sl LAYER_MAC>, <&tog LAYER_MAC>;
     };
 
+    &sl {
+        release-after-ms = <3000>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

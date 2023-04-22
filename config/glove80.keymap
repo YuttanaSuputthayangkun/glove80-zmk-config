@@ -420,7 +420,7 @@
         
         layer_hub {
             bindings = <
-      &trans            &trans             &trans             &trans            &trans                                                                                                                                &trans           &trans          &trans           &mac_scrn_p       &mac_scrn
+      &trans            &trans             &trans             &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
       &trans            &tog LAYER_GENSHIN &tog LAYER_READING &tog LAYER_GAME   &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans

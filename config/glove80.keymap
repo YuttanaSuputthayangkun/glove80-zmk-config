@@ -32,6 +32,7 @@
 #define LAYER_GENSHIN 6
 #define LAYER_READING 7
 #define LAYER_GAME 8
+#define LAYER_MAC 9
 
 #define COMBO_LAYERS LAYER_DEFAULT LAYER_READING
 
@@ -375,6 +376,17 @@
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans                          &kp ENTER     &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+            >;
+        };
+        
+        layer_mac {
+            bindings = <
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &mac_scrn_p       &mac_scrn
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
     };

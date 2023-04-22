@@ -283,6 +283,13 @@
         tapping-term-ms = <200>;
         bindings = <&none>, <&sl LAYER_MAC>, <&tog LAYER_MAC>;
     };
+    td_hub: tap_dance_layer_hub {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tap_dance_layer_hub";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&none>, <&sl LAYER_HUB>;
+    };
 
     &sl {
         release-after-ms = <3000>;
@@ -298,7 +305,7 @@
   &kp TAB                          &kp Q    &kp W     &kp E      &kp R   &kp T                                                                                  &kp Y   &kp U           &kp I           &kp O           &kp P           &kp PIPE
   &kp ESC                          &kp A    &kp S     &kp D      &kp F   &kp G                                                                                  &kp H   &kp J           &kp K           &kp L           &kp SEMI        &kp SINGLE_QUOTE
   &kp GRAVE                        &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT        &kp LCTRL    MAGIC_DEFAULT &kp LGUI &kp RCTRL  &kp RSHFT       &kp N   &kp M           &kp COMMA       &kp DOT         &kp SLASH       &kp BSLH
-  &sl LAYER_HUB                    &td_win  &td_mac   &kp ESC    &kp LALT       MO_LOWER         &kp SPACE    &kp LALT      &kp RALT &kp BSPC   MO_RAISE                &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp PG_DN
+  &td_hub                          &td_win  &td_mac   &kp ESC    &kp LALT       MO_LOWER         &kp SPACE    &kp LALT      &kp RALT &kp BSPC   MO_RAISE                &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT      &kp PG_DN
             >;
         };
 

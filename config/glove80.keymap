@@ -409,7 +409,7 @@
         
         layer_windows {
             bindings = <
-      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &mac_scrn_p       &mac_scrn
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            $trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans

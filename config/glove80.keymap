@@ -291,7 +291,7 @@
         bindings = <&none>, <&sl LAYER_HUB>;
     };
 
-    &sl {
+    sl {
         release-after-ms = <3000>;
     };
 

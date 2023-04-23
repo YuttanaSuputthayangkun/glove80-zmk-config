@@ -267,6 +267,22 @@
             tap-ms = <0>;
             bindings = <&kt LSHFT &kt LGUI &kp N4 &kt LGUI &kt LSHFT>;
         };
+        win_lang: windows_language_switch {
+            label = "windows_language_switch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LGUI &kp SPACE &kt LGUI>;
+        };
+        mac_lang: mac_language_switch {
+            label = "mac_language_switch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LCTRL &kp SPACE &kt LCTRL>;
+        };
     };
 
     td_win: tap_dance_windows {

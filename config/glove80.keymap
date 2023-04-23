@@ -306,6 +306,20 @@
         tapping-term-ms = <200>;
         bindings = <&none>, <&sl LAYER_HUB>;
     };
+    td_win_lang: tap_dance_windows_language_switch {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tap_dance_windows_language_switch";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LALT>, <&win_lang>;
+    };
+    td_mac_lang: tap_dance_mac_language_switch {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tap_dance_mac_language_switch";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LALT>, <&mac_lang>;
+    };
 
     sl {
         release-after-ms = <3000>;
@@ -433,7 +447,7 @@
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &td_mac_lang                    &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
         
@@ -444,7 +458,7 @@
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans            &trans            &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans            &trans            &trans            &td_win_lang                    &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
         

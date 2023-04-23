@@ -47,6 +47,10 @@
 #define TG_READING &tog LAYER_READING
 #define TG_GAME &tog LAYER_GAME
 
+#define TO_GENSHIN &to LAYER_GENSHIN
+#define TO_READING &to LAYER_READING
+#define TO_GAME &to LAYER_GAME
+
 #define MAGIC_DEFAULT &magic LAYER_MAGIC LAYER_DEFAULT 
 
 / {
@@ -465,7 +469,7 @@
         layer_hub {
             bindings = <
       &trans            &trans             &trans             &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
-      &trans            &tog LAYER_GENSHIN &tog LAYER_READING &tog LAYER_GAME   &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &to LAYER_GENSHIN  &to LAYER_READING  &to LAYER_GAME    &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans             &trans             &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans

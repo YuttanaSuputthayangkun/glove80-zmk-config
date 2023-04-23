@@ -308,7 +308,7 @@
         label = "tap_dance_layer_hub";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&sl LAYER_HUB>;
+        bindings = <&none>, <&sl LAYER_HUB>, <&to LAYER_DEFAULT>;
     };
     td_win_lang: tap_dance_windows_language_switch {
         compatible = "zmk,behavior-tap-dance";

@@ -180,6 +180,24 @@
             key-positions = <52 70>;
             bindings = <&lsft_lgui>;
         };
+        combo_e_f {
+            layers = <COMBO_LAYERS>;
+            timeout-ms = <30>;
+            key-positions = <25 38>;
+            bindings = <&lsft_lctl>;
+        };
+        combo_w_d {
+            layers = <COMBO_LAYERS>;
+            timeout-ms = <30>;
+            key-positions = <24 37>;
+            bindings = <&lsft_lgui>;
+        };
+        combo_e_s_f {
+            layers = <COMBO_LAYERS>;
+            timeout-ms = <30>;
+            key-positions = <25 36 38>;
+            bindings = <&lsft_lalt>;
+        };
 
         /* right hand */
         combo_h_l {
@@ -240,24 +258,6 @@
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <30 41 43>;
-            bindings = <&lsft_lalt>;
-        };
-        combo_e_f {
-            layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
-            key-positions = <25 38>;
-            bindings = <&lsft_lctl>;
-        };
-        combo_w_d {
-            layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
-            key-positions = <24 37>;
-            bindings = <&lsft_lgui>;
-        };
-        combo_e_s_f {
-            layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
-            key-positions = <31 42>;
             bindings = <&lsft_lalt>;
         };
     };

@@ -232,7 +232,7 @@
             bindings = <&kp RCTRL>;
         };
         combo_j_k_l_win {
-            layers = <LAYER_WIN>;
+            layers = <LAYER_WINDOWS>;
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <41 42 43>;
             bindings = <&win_lang>;

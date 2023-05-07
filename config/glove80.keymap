@@ -257,12 +257,12 @@
             bindings = <&kp RGUI>;
         };
         combo_l_semicolon {
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            timeout-ms = <50>;
             key-positions = <43 44>;
             bindings = <&kp BACKSPACE>;
         };
         combo_o_semicolon {
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            timeout-ms = <50>;
             key-positions = <31 44>;
             bindings = <&kp ENTER>;
         };

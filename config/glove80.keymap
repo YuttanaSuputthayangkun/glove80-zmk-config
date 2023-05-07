@@ -53,6 +53,10 @@
 
 #define MAGIC_DEFAULT &magic LAYER_MAGIC LAYER_DEFAULT 
 
+#define SHORT_COMBO_TIMEOUT 10
+#define DEFAULT_COMBO_TIMEOUT 30
+#define LONG_COMBO_TIMEOUT 50
+
 / {
     /* Glove80 system behavior & macros */
     behaviors {
@@ -262,15 +266,20 @@
         };
         combo_z_x_c_v_win {
             layers = <LAYER_WINDOWS>;
-            timeout-ms = <30>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <47 48 49 50>;
             bindings = <&win_lang>;
         };
         combo_z_x_c_v_mac {
             layers = <LAYER_MAC>;
-            timeout-ms = <30>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <47 48 49 50>;
             bindings = <&mac_lang>;
+        };
+        combo_s_d_f_z {   // combo for default layer activation
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            key-positions = <36 37 38>;
+            bindings = <&sl LAYER_DEFAULT>;
         };
     };
 

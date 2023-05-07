@@ -234,6 +234,7 @@
             key-positions = <41 42>;
             bindings = <&kp RCTRL>;
         };
+        /*
         combo_j_k_l_win {
             layers = <LAYER_WINDOWS>;
             timeout-ms = <LONG_COMBO_TIMEOUT>;
@@ -246,6 +247,7 @@
             key-positions = <41 42 43>;
             bindings = <&mac_lang>;
         };
+        */
         combo_j_l {
             timeout-ms = <30>;
             key-positions = <41 43>;

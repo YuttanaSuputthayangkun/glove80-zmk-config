@@ -276,7 +276,7 @@
             key-positions = <47 48 49 50>;
             bindings = <&mac_lang>;
         };
-        combo_f_z {   // combo for default layer activation
+        combo_f_z {   
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <38 47>;
             bindings = <&sl LAYER_DEFAULT>;

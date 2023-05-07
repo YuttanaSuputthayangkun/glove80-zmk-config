@@ -57,6 +57,8 @@
 #define DEFAULT_COMBO_TIMEOUT 30
 #define LONG_COMBO_TIMEOUT 50
 
+#define TAP_DANCE_TERM_DEFAULT 300
+
 / {
     /* Glove80 system behavior & macros */
     behaviors {
@@ -381,49 +383,49 @@
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_windows";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&none>, <&sl LAYER_WINDOWS>, <&tog LAYER_WINDOWS>;
     };
     td_mac: tap_dance_mac {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_mac";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&none>, <&sl LAYER_MAC>, <&tog LAYER_MAC>;
     };
     td_hub: tap_dance_layer_hub {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_layer_hub";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&none>, <&sl LAYER_HUB>, <&to LAYER_DEFAULT>;
     };
     td_win_lang: tap_dance_windows_language_switch {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_windows_language_switch";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&kp LALT>, <&win_lang>;
     };
     td_mac_lang: tap_dance_mac_language_switch {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_mac_language_switch";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&kp LALT>, <&mac_lang>;
     };
     td_mac_scrn: tap_dance_mac_printscreen {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_mac_printscreen";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&mac_scrn>, <&mac_scrn_c>;
     };
     td_mac_scrn_p: tap_dance_mac_printscreen_portion {
         compatible = "zmk,behavior-tap-dance";
         label = "tap_dance_mac_printscreen_portion";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&mac_scrn_p>, <&mac_scrn_p_c>;
     };
 

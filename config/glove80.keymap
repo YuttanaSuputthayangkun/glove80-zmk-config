@@ -517,10 +517,10 @@
             bindings = <
       &kp ESC           &win_pscrn        &none             &none             &kp N5                                                                                                                                &trans           &trans          &trans           &trans            &trans 
       &kp ESC           &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &kp ESC           &kp Q             &kp W             &kp E             &kp T             &kp R                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
+      &kp ESC           &kp Q             &kp W             &kp E             &kp R             &kp T                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
       &kp LALT          &kp A             &kp S             &kp D             &kp F             &kp G                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
-      &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B         &kp J         &kp M          TG_GENSHIN    &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &none             &kp J             &kp M             &kp LALT                        &kp SPACE     &kp ESC        &kp LCTL      &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B         &trans         &trans          TG_GENSHIN    &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
+      &trans            &none             &kp J             &kp M             &kp ESC                         &trans         &trans          &kp LCTL      &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
             >;
         };
 

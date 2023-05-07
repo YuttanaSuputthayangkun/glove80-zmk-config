@@ -222,19 +222,16 @@
 
         /* right hand */
         combo_h_l {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <40 43>;
             bindings = <&kp LSHFT>;
         };
         combo_j_k {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <41 42>;
             bindings = <&kp RCTRL>;
         };
         combo_j_l {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <41 43>;
             bindings = <&kp RALT>;

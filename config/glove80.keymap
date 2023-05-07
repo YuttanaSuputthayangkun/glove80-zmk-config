@@ -283,6 +283,18 @@
             key-positions = <30 41 43>;
             bindings = <&lsft_lalt>;
         };
+        combo_m_lt_gt_win {
+            layers = <LAYER_WINDOWS>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <59 60 61>;
+            bindings = <&win_lang>;
+        };
+        combo_m_lt_gt_mac {
+            layers = <LAYER_MAC>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <59 60 61>;
+            bindings = <&mac_lang>;
+        };
     };
 
     /* Custom Macros */

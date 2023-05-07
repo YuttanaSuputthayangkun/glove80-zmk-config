@@ -553,7 +553,7 @@
       &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
       &kp LALT          &kp A             &kp S             &kp D             &kp F             &kp G                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
       &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B         &trans         &trans          TG_GENSHIN    &trans         &trans        &trans      &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &none             &kp J             &kp M             &kp ESC                         &trans         MO_LOWER        &kp LCTL      &trans         &trans        &trans                      &trans           &trans          &trans           &trans            &trans
+      &trans            &none             &kp J             &kp M             &kp ESC                         &kp SPACE      MO_LOWER        &kp LCTL      &trans         &trans        &trans                      &trans           &trans          &trans           &trans            &trans
             >;
         };
 

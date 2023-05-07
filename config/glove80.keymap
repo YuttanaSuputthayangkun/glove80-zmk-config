@@ -202,6 +202,23 @@
             key-positions = <25 36 38>;
             bindings = <&lsft_lalt>;
         };
+        combo_z_x_c_v_win {
+            layers = <LAYER_WINDOWS>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <47 48 49 50>;
+            bindings = <&win_lang>;
+        };
+        combo_z_x_c_v_mac {
+            layers = <LAYER_MAC>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <47 48 49 50>;
+            bindings = <&mac_lang>;
+        };
+        combo_f_z {   
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <38 47>;
+            bindings = <&sl LAYER_DEFAULT>;
+        };
 
         /* right hand */
         combo_h_l {
@@ -223,63 +240,39 @@
             bindings = <&kp RALT>;
         };
         combo_k_l {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp RGUI>;
         };
         combo_l_semicolon {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <43 44>;
             bindings = <&kp BACKSPACE>;
         };
         combo_o_semicolon {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <50>;
             key-positions = <31 44>;
             bindings = <&kp ENTER>;
         };
         combo_rshft_space {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <57 74>;
             bindings = <&kp RGUI>;
         };
         combo_i_j {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <30 41>;
             bindings = <&lsft_lctl>;
         };
         combo_o_k {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <31 42>;
             bindings = <&lsft_lgui>;
         };
         combo_i_j_l {
-            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <30 41 43>;
             bindings = <&lsft_lalt>;
-        };
-        combo_z_x_c_v_win {
-            layers = <LAYER_WINDOWS>;
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
-            key-positions = <47 48 49 50>;
-            bindings = <&win_lang>;
-        };
-        combo_z_x_c_v_mac {
-            layers = <LAYER_MAC>;
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
-            key-positions = <47 48 49 50>;
-            bindings = <&mac_lang>;
-        };
-        combo_f_z {   
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
-            key-positions = <38 47>;
-            bindings = <&sl LAYER_DEFAULT>;
         };
     };
 

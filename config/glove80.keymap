@@ -134,25 +134,23 @@
         /* left hand */
         combo_w_a {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <24 35>;
             bindings = <&kp ESC>;
         };
         combo_s_d {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <36 37>;
             bindings = <&kp LGUI>;
         };
         combo_s_f {
-            layers = <COMBO_LAYERS>;
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <36 38>;
             bindings = <&kp TAB>;
         };
         combo_s_r {
-            layers = <COMBO_LAYERS>;
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <36 26>;
             bindings = <&lsft_tab>;
         };
@@ -225,7 +223,7 @@
         /* right hand */
         combo_h_l {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <40 43>;
             bindings = <&kp LSHFT>;
         };
@@ -247,12 +245,12 @@
             bindings = <&kp RGUI>;
         };
         combo_l_semicolon {
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <43 44>;
             bindings = <&kp BACKSPACE>;
         };
         combo_o_semicolon {
-            timeout-ms = <50>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <31 44>;
             bindings = <&kp ENTER>;
         };

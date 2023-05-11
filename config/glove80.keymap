@@ -135,6 +135,11 @@
         compatible = "zmk,combos";
 
         /* left hand */
+        combo_d_v {
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            key-positions = <37 50>;
+            bindings = <&td_lower>;
+        };
         combo_w_a {
             layers = <COMBO_LAYERS>;
             timeout-ms = <LONG_COMBO_TIMEOUT>;
@@ -224,6 +229,11 @@
         };
 
         /* right hand */
+        combo_k_m {
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            key-positions = <42 59>;
+            bindings = <&td_raise>;
+        };
         combo_h_l {
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <40 43>;
@@ -458,6 +468,20 @@
         #binding-cells = <0>;
         tapping-term-ms = <TAP_DANCE_TERM_DEFAULT>;
         bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
+    };
+    td_lower: tap_dance_lower {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tap_dance_lower";
+        #binding-cells = <0>;
+        tapping-term-ms = <TAP_DANCE_TERM_SHORT>;
+        bindings = <&mo LAYER_LOWER>, <&sl LAYER_LOWER>;
+    };
+    td_raise: tap_dance_raise {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tap_dance_raise";
+        #binding-cells = <0>;
+        tapping-term-ms = <TAP_DANCE_TERM_SHORT>;
+        bindings = <&mo LAYER_RAISE>, <&sl LAYER_RAISE>;
     };
 
     sl {

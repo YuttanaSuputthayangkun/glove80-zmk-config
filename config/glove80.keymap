@@ -332,6 +332,14 @@
             tap-ms = <0>;
             bindings = <&kt LGUI &kp PSCRN &kt LGUI>;
         };
+        win_pscrn_p: windows_print_screen_partial {
+            label = "windows_print_screen_partial";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kt LGUI &kt LSHFT &kp PSCRN &kt LSHFT &kt LGUI>;
+        };
         lsft_lgui: left_shift_lgui {
             label = "left_shift_lgui";
             compatible = "zmk,behavior-macro";
@@ -618,7 +626,7 @@
         
         layer_windows {
             bindings = <
-      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &win_pscrn
+      &trans            &trans            &trans            &trans            &trans                                                                                                                                &trans           &trans          &trans           &win_pscrn_p      &win_pscrn
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &trans            &trans            &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans

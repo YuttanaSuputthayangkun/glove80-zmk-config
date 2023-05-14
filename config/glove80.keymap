@@ -207,12 +207,15 @@
             key-positions = <24 37>;
             bindings = <&lsft_lgui>;
         };
+        // this doesn't work for some reason
+        /*
         combo_e_s_f {
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <25 36 38>;
             bindings = <&lsft_lalt>;
         };
+        */
         combo_z_x_c_v_win {
             layers = <LAYER_WINDOWS>;
             timeout-ms = <LONG_COMBO_TIMEOUT>;
@@ -313,17 +316,12 @@
 
         /* left and right */
         combo_f_h {
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <38 40>;
             bindings = <&sl LAYER_LOWER>;
         };
-        combo_f_j {
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
-            key-positions = <38 41>;
-            bindings = <&sl 12>;
-        };
         combo_g_j {
-            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <39 41>;
             bindings = <&sl LAYER_RAISE>;
         };

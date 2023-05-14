@@ -233,6 +233,11 @@
             key-positions = <38 47>;
             bindings = <&sl LAYER_DEFAULT>;
         };
+        combo_f_v {
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <38 50>;
+            bindings = <&sl LAYER_LOWER>;
+        };
 
         /* right hand */
         combo_k_m {
@@ -313,6 +318,11 @@
             key-positions = <59 60 61>;
             bindings = <&mac_lang>;
         };
+        combo_j_m {
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <41 59>;
+            bindings = <&sl LAYER_RAISE>;
+        };
 
         /* left and right */
         combo_f_h {
@@ -324,6 +334,11 @@
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <39 41>;
             bindings = <&sl LAYER_RAISE>;
+        };
+        combo_v_m {
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <50 59>;
+            bindings = <&sl LAYER_ADJUST>;
         };
     };
 

@@ -310,6 +310,18 @@
             key-positions = <59 60 61>;
             bindings = <&mac_lang>;
         };
+
+        /* left and right */
+        combo_f_h {
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <38 40>;
+            bindings = <&sl LAYER_LOWER>;
+        };
+        combo_g_j {
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <39 41>;
+            bindings = <&sl LAYER_RAISE>;
+        };
     };
 
     /* Custom Macros */

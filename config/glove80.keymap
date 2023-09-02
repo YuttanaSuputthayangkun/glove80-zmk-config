@@ -212,7 +212,7 @@
             layers = <LAYER_GENSHIN>;
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <52 70>;
-            bindings = <&kp ESC>;
+            bindings = <&kp J>;
         };
         combo_lctrl_delete {
             layers = <COMBO_LAYERS LAYER_GENSHIN>;

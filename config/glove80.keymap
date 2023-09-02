@@ -245,6 +245,11 @@
             key-positions = <38 50>;
             bindings = <&sl LAYER_LOWER>;
         };
+        combo_s_z {
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <36 47>;
+            bindings = <&sl LAYER_HUB>;
+        };
 
         /* right hand */
         combo_k_m {
@@ -329,6 +334,11 @@
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <41 59>;
             bindings = <&sl LAYER_RAISE>;
+        };
+        combo_l_fslh {
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
+            key-positions = <43 62>;
+            bindings = <&sl LAYER_HUB>;
         };
 
         /* left and right */

@@ -268,6 +268,12 @@
             key-positions = <36 47>;
             bindings = <&sl LAYER_HUB>;
         };
+        combo_bksp_del_genshin {
+            layers = <LAYER_GENSHIN>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <69 70>;
+            bindings = <&kp M>;
+        };
 
         /* right hand */
         combo_k_m {

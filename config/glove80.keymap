@@ -184,6 +184,12 @@
             key-positions = <49 50>;
             bindings = <&kp ENTER>;
         };
+        combo_lshft_lctl {
+            layers = <LAYER_GENSHIN>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <52 53>;
+            bindings = <&kp M>;
+        };
         combo_lshft_bksp {
             layers = <COMBO_LAYERS>;
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
@@ -212,7 +218,7 @@
             layers = <COMBO_LAYERS LAYER_GENSHIN>;
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <53 70>;
-            bindings = <&kp M>;
+            bindings = <&kp J>;
         };
         combo_e_f {
             layers = <COMBO_LAYERS>;

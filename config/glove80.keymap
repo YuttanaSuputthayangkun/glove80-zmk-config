@@ -348,7 +348,7 @@
             bindings = <&sl LAYER_ADJUST>;
         };
         combo_d_k {
-            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <37 42>;
             bindings = <&sl LAYER_HUB>;
         };

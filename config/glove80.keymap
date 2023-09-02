@@ -335,6 +335,7 @@
             key-positions = <41 59>;
             bindings = <&sl LAYER_RAISE>;
         };
+        // this doesn't work for some reason
         combo_l_fslh {
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <43 62>;

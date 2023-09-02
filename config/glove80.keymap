@@ -51,6 +51,7 @@
 #define TG_READING &tog LAYER_READING
 #define TG_GAME &tog LAYER_GAME
 
+#define TO_DEFAULT &to LAYER_DEFAULT
 #define TO_GENSHIN &to LAYER_GENSHIN
 #define TO_READING &to LAYER_READING
 #define TO_GAME &to LAYER_GAME
@@ -345,6 +346,11 @@
             timeout-ms = <LONG_COMBO_TIMEOUT>;
             key-positions = <50 59>;
             bindings = <&sl LAYER_ADJUST>;
+        };
+        combo_d_k {
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <37 42>;
+            bindings = <&sl LAYER_HUB>;
         };
     };
 
@@ -671,12 +677,12 @@
         
         layer_hub {
             bindings = <
-      &trans            &trans             &trans             &trans            &trans                                                                                                                                &trans           &trans          &trans           &trans            &trans
-      &trans            &to LAYER_GENSHIN  &to LAYER_READING  &to LAYER_GAME    &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans             &trans             &trans            &trans            &trans                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans             &trans             &trans            &trans            &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans           &trans          &trans           &trans            &trans
-      &trans            &trans             &trans             &trans            &trans                          &trans        &trans         &trans        &trans         &trans        &trans                        &trans           &trans          &trans           &trans            &trans
+      &trans            &trans             &trans             &trans            &trans                                                                                                                                   &trans             &trans            &trans           &trans            &trans
+      &trans            &to LAYER_GENSHIN  &to LAYER_READING  &to LAYER_GAME    &trans               &trans                                                                                              &trans          &trans             &trans            &trans           &trans            &trans
+      &trans            &trans             &to LAYER_GENSHIN  &to LAYER_READING &to LAYER_GAME       &trans                                                                                              &trans          &to LAYER_GENSHIN  &to LAYER_READING &to LAYER_GAME   &trans            &trans
+      &trans            &trans             &trans             &trans            &trans               &trans                                                                                              &trans          &trans             &trans            &trans           &trans            &trans
+      &trans            &trans             &trans             &trans            &trans               &trans        &trans        &trans         &trans        &trans         &trans        &trans        &trans          &trans             &trans            &trans           &trans            &trans
+      &trans            &trans             &trans             &trans            &trans                             TO_DEFAULT    &trans         &trans        &trans         &trans        TO_DEFAULT                    &trans             &trans            &trans           &trans            &trans
             >;
         };
         

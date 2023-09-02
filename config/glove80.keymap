@@ -190,7 +190,7 @@
             bindings = <&kp LGUI>;
         };
         combo_lshft_space {
-            layers = <COMBO_LAYERS>;
+            layers = <COMBO_LAYERS LAYER_GENSHIN>;
             timeout-ms = <30>;
             key-positions = <52 70>;
             bindings = <&lsft_lgui>;
@@ -537,7 +537,7 @@
 
         base_0_layer {
             bindings = <
-  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                                 &kp C_VOL_DN    &kp C_VOL_UP    &td_media       TG_GENSHIN      &win_pscrn
+  &kp F1                           &kp F2   &kp F3    &kp F4     &kp F5                                                                                                 &kp C_VOL_DN    &kp C_VOL_UP    &td_media       &none           &win_pscrn
   &kp TILDE                        &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                                 &kp N6  &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS
   &kp TAB                          &kp Q    &kp W     &kp E      &kp R   &kp T                                                                                  &kp Y   &kp U           &kp I           &kp O           &kp P           &kp PIPE
   &kp ESC                          &kp A    &kp S     &kp D      &kp F   &kp G                                                                                  &kp H   &kp J           &kp K           &kp L           &kp SEMI        &kp SINGLE_QUOTE
@@ -620,7 +620,7 @@
       &kp ESC           &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                                                                              &trans          &trans           &trans          &trans           &trans            &trans
       &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
       &kp LALT          &kp A             &kp S             &kp D             &kp F             &kp G                                                                                               &trans          &trans           &trans          &trans           &trans            &trans
-      &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B         &trans         &trans          TG_GENSHIN    &trans         &trans        &trans      &trans          &trans           &trans          &trans           &trans            &trans
+      &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B         &kp ESC        &trans          TG_GENSHIN    &trans         &trans        &trans      &trans          &trans           &trans          &trans           &trans            &trans
       &trans            &none             &kp J             &kp M             &kp ESC                         &kp SPACE      MO_LOWER        &kp LCTL      &trans         &trans        &trans                      &trans           &trans          &trans           &trans            &trans
             >;
         };

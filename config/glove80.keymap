@@ -168,13 +168,13 @@
         };
         combo_d_f {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <37 38>;
             bindings = <&kp LCTL>;
         };
         combo_x_c {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <48 49>;
             bindings = <&kp BACKSPACE>;
         };
@@ -186,37 +186,43 @@
         };
         combo_lshft_bksp {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <52 69>;
             bindings = <&kp LGUI>;
         };
-        combo_lshft_bksp_GENSHIN {
+        combo_lshft_bksp_genshin {
             layers = <LAYER_GENSHIN>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <52 69>;
             bindings = <&kp LALT>;
         };
         combo_lshft_space {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <52 70>;
             bindings = <&lsft_lgui>;
         };
+        combo_lshft_space_genshin {
+            layers = <LAYER_GENSHIN>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
+            key-positions = <52 70>;
+            bindings = <&kp ESC>;
+        };
         combo_lctrl_delete {
             layers = <COMBO_LAYERS LAYER_GENSHIN>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <53 70>;
-            bindings = <&kp LALT>;
+            bindings = <&kp M>;
         };
         combo_e_f {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <25 38>;
             bindings = <&lsft_lctl>;
         };
         combo_w_d {
             layers = <COMBO_LAYERS>;
-            timeout-ms = <30>;
+            timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <24 37>;
             bindings = <&lsft_lgui>;
         };

@@ -190,6 +190,12 @@
             key-positions = <52 69>;
             bindings = <&kp LGUI>;
         };
+        combo_lshft_bksp_GENSHIN {
+            layers = <LAYER_GENSHIN>;
+            timeout-ms = <30>;
+            key-positions = <52 69>;
+            bindings = <&kp LALT>;
+        };
         combo_lshft_space {
             layers = <COMBO_LAYERS>;
             timeout-ms = <30>;

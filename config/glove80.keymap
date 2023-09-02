@@ -191,13 +191,13 @@
             bindings = <&kp LGUI>;
         };
         combo_lshft_space {
-            layers = <COMBO_LAYERS LAYER_GENSHIN>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <30>;
             key-positions = <52 70>;
             bindings = <&lsft_lgui>;
         };
         combo_lctrl_delete {
-            layers = <COMBO_LAYERS>;
+            layers = <COMBO_LAYERS LAYER_GENSHIN>;
             timeout-ms = <30>;
             key-positions = <53 70>;
             bindings = <&kp LALT>;

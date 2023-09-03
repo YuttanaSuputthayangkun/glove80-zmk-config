@@ -215,10 +215,10 @@
             bindings = <&kp J>;
         };
         combo_lctrl_delete {
-            layers = <COMBO_LAYERS LAYER_GENSHIN>;
+            layers = <COMBO_LAYERS>;
             timeout-ms = <DEFAULT_COMBO_TIMEOUT>;
             key-positions = <53 70>;
-            bindings = <&kp J>;
+            bindings = <&kp LALT>;
         };
         combo_e_f {
             layers = <COMBO_LAYERS>;
